@@ -22,10 +22,11 @@ class Bio extends React.Component {
             borderRadius: "50%",
           }}
         />
-        <p style={{ maxWidth: 310 }}>
-          Personal blog by{" "}
+        <p style={{ maxWidth: 360 }}>
+          Photo blog by{" "}
           <a href="https://mobile.twitter.com/jedr_blaszyk">Jedrzej Blaszyk</a>.{" "}
-          Trying&nbsp; to post cool pics.
+          Capturing my life through pictures. Check out my{" "}
+          <a href="https://j.blaszyk.me">blog</a>.
         </p>
       </div>
     );
