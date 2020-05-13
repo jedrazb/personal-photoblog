@@ -1,13 +1,13 @@
-import React from 'react';
-import profilePic from '../assets/profile-pic.jpg';
-import { rhythm } from '../utils/typography';
+import React from "react";
+import profilePic from "../assets/profile-pic.jpg";
+import { rhythm } from "../utils/typography";
 
 class Bio extends React.Component {
   render() {
     return (
       <div
         style={{
-          display: 'flex',
+          display: "flex",
           marginBottom: rhythm(2),
         }}
       >
@@ -19,13 +19,13 @@ class Bio extends React.Component {
             marginBottom: 0,
             width: rhythm(2),
             height: rhythm(2),
-            borderRadius: '50%',
+            borderRadius: "50%",
           }}
         />
         <p style={{ maxWidth: 310 }}>
-          Personal blog by{' '}
-          <a href="https://mobile.twitter.com/jedr_blaszyk">Jedrzej Blaszyk</a>.{' '}
-          I&nbsp;write about stuff I find interesting.
+          Personal blog by{" "}
+          <a href="https://mobile.twitter.com/jedr_blaszyk">Jedrzej Blaszyk</a>.{" "}
+          Trying&nbsp; to post cool pics.
         </p>
       </div>
     );

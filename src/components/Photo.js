@@ -3,19 +3,32 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 
 import { rhythm } from "../utils/typography";
 import { formatPostDate } from "../utils/helpers";
+import "./Photo.css";
 
 class Photo extends React.Component {
   render() {
-    const { date, caption, imgUrl } = this.props.photo;
+    const { date, location, caption, imgUrl } = this.props.photo;
     return (
-      <div>
-        <LazyLoadImage
-          alt={image.alt}
-          threshold={100}
-          src={image.src} // use normal <img> attributes as props
-        />
-        <span>{caption}</span>
-        <span></span>
+      <div className="photo-container" style={{ marginBottom: "25px" }}>
+        <div className="photo">
+          <small>
+            {formatPostDate(date, "en")}
+            {` • `}
+            {location}
+          </small>
+          <LazyLoadImage
+            style={{
+              marginBottom: 0,
+            }}
+            threshold={100}
+            src={imgUrl} // use normal <img> attributes as props
+          />
+          <p className="caption">
+            <d style={{ fontWeight: "bold" }}>jedr_blaszyk</d>
+            {"  "}
+            {caption}
+          </p>
+        </div>
       </div>
     );
   }
