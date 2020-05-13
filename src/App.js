@@ -1,25 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router } from "react-router-dom";
+
+import PhotoBookTemplate from "./templates/insta-index";
+import "./App.css";
 
 function App() {
+  const photos = [
+    {
+      date: "12/03/1232",
+      caption: "Just chilling here",
+      imgUrl:
+        "https://img3.stockfresh.com/files/m/moses/m/12/2659982_stock-photo-tropical-beach-square-composition.jpg",
+    },
+  ];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <PhotoBookTemplate photos={photos} />
+    </Router>
   );
 }
 
