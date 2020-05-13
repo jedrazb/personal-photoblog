@@ -1,7 +1,6 @@
 import React from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
-import { rhythm } from "../utils/typography";
 import { formatPostDate } from "../utils/helpers";
 import "./Photo.css";
 

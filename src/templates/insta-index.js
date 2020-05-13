@@ -1,11 +1,8 @@
 import Bio from "../components/Bio";
 import Footer from "../components/Footer";
 import Layout from "../components/Layout";
-import Panel from "../components/Panel";
 import Photo from "../components/Photo";
 import React from "react";
-import get from "lodash/get";
-import { rhythm } from "../utils/typography";
 
 class PhotoBookTemplate extends React.Component {
   render() {

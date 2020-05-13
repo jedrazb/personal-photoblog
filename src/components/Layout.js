@@ -50,7 +50,7 @@ class Layout extends React.Component {
     };
   }
   renderHeader() {
-    const { location, title } = this.props;
+    const { title } = this.props;
 
     return (
       <h1
@@ -116,6 +116,7 @@ class Layout extends React.Component {
                   checked: (
                     <img
                       src={moon}
+                      alt=""
                       width="16"
                       height="16"
                       role="presentation"
@@ -125,6 +126,7 @@ class Layout extends React.Component {
                   unchecked: (
                     <img
                       src={sun}
+                      alt=""
                       width="16"
                       height="16"
                       role="presentation"

@@ -11,17 +11,15 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    {
-      fetch(
-        "https://raw.githubusercontent.com/jedrazb/personal-photoblog-content/master/metadata.json"
-      )
-        .then((response) => response.json())
-        .then((photos) => {
-          this.setState({
-            photos: photos,
-          });
+    fetch(
+      "https://raw.githubusercontent.com/jedrazb/personal-photoblog-content/master/metadata.json"
+    )
+      .then((response) => response.json())
+      .then((photos) => {
+        this.setState({
+          photos: photos,
         });
-    }
+      });
   }
   render() {
     return (

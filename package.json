@@ -18,7 +18,7 @@
     "typography": "^0.16.19",
     "typography-theme-wordpress-2016": "^0.16.19"
   },
-  "homepage": "https://jedrazb.github.io/personal-photobook/",
+  "homepage": "https://jedrazb.github.io/personal-photoblog/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
