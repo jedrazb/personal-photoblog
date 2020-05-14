@@ -136,7 +136,6 @@ class Layout extends React.Component {
                 }}
                 checked={this.state.theme === "dark"}
                 onChange={(e) => {
-                  console.log(window);
                   window.__setPreferredTheme(
                     e.target.checked ? "dark" : "light"
                   );

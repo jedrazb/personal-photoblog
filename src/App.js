@@ -1,8 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router } from "react-router-dom";
-
 import PhotoBookTemplate from "./templates/insta-index";
-import "./App.css";
 
 class App extends React.Component {
   constructor(props) {
