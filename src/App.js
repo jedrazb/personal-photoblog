@@ -10,7 +10,8 @@ class App extends React.Component {
 
   componentDidMount() {
     fetch(
-      "https://raw.githubusercontent.com/jedrazb/personal-photoblog-content/master/metadata.json"
+      "https://raw.githubusercontent.com/jedrazb/personal-photoblog-content/master/metadata.json",
+      { cache: "no-cache" }
     )
       .then((response) => response.json())
       .then((photos) => {

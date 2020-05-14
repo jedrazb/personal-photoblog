@@ -23,8 +23,9 @@ class Photo extends React.Component {
             src={imgUrl} // use normal <img> attributes as props
           />
           <p className="caption">
-            <d style={{ fontWeight: "bold" }}>jedr_blaszyk</d>
-            {"  "}
+            <span style={{ fontWeight: "bold", marginRight: "10px" }}>
+              jedr_blaszyk
+            </span>
             {caption}
           </p>
         </div>
