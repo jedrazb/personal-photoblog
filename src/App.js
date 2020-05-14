@@ -23,7 +23,7 @@ class App extends React.Component {
   }
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <PhotoBookTemplate photos={this.state.photos} />
       </Router>
     );

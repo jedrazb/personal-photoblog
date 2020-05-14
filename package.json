@@ -1,5 +1,6 @@
 {
   "name": "personal-photobook",
+  "homepage": "https://photos.blaszyk.me",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,14 +19,13 @@
     "typography": "^0.16.19",
     "typography-theme-wordpress-2016": "^0.16.19"
   },
-  "homepage": "https://jedrazb.github.io/personal-photoblog/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d public"
+    "deploy": "cp CNAME public/ && gh-pages -d public"
   },
   "eslintConfig": {
     "extends": "react-app"
